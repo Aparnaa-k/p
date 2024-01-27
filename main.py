@@ -117,10 +117,37 @@
 #     print(i)
 
 # Check whether a string is a palindrome.
-word = input('Enter the word->  ')
-palindrome = word == word[::-1]
-if palindrome:
-  print("True")
-else:
-  print("False")
+# word = input('Enter the word->  ')
+# palindrome = word == word[::-1]
+# if palindrome:
+#   print("True")
+# else:
+#   print("False")
 
+# Calculate the factorial of a given number.
+# num = int(input())
+# factorial = 1
+# for i in range(1, num+1):
+#   factorial *= i
+# print(factorial)
+
+# Print Fibonacci series up to the 10th term.
+# a = 0
+# b = 1
+# for i in range(10):
+#   print(a, end=",")
+#   c = a + b
+#   a = b
+#   b = c
+
+# Check if a number is prime or not.
+num = int(input())
+prime = True
+for i in range(2, num):
+  if num % i == 0:
+    prime = False
+    break
+if prime:
+  print("Prime")
+else:
+  print("Not prime")
