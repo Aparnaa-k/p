@@ -1,3 +1,17 @@
+# Print Hello world
+# print("hello world")
+
+# Generate a list of squares of numbers from 1 to 10.
+# Print the numbers from 1 to 10.
+# for i in range(1, 11):
+#     print(i,end=" ")
+
+# Find the maximum of three numbers.
+# n1 = int(input("n1:"))
+# n2 = int(input("n2:"))
+# n3 = int(input("n3:"))
+# print(max(n1,n2,n3))
+
 # patient = input()
 # age = int(input())
 # print("We check in a patient named", patient,". He's", age, "years old and is a new patient.")
@@ -17,8 +31,9 @@
 # name = input("What is your name? ")
 # print("Hello " + name +  " How are you? ")
 
-# a = input("Enter a value a")
-# b = input("Enter a value b")
+# Write a program to swap two numbers.
+# a = input("Enter a value a= ")
+# b = input("Enter a value b= ")
 # temp = a
 # a = b
 # b = temp
@@ -141,13 +156,83 @@
 #   b = c
 
 # Check if a number is prime or not.
-num = int(input())
-prime = True
-for i in range(2, num):
-  if num % i == 0:
-    prime = False
-    break
-if prime:
-  print("Prime")
-else:
-  print("Not prime")
+# num = int(input())
+# prime = True
+# for i in range(2, num):
+#   if num % i == 0:
+#     prime = False
+#     break
+# if prime:
+#   print("Prime")
+# else:
+#   print("Not prime")
+
+# N = int(input())
+
+# def sieve_of_eratosthenes(N):
+#     is_prime = [True] * (N + 1)
+#     is_prime[0] = is_prime[1] = False
+
+#     for i in range(2, int(N**0.5) + 1):
+#         if is_prime[i]:
+#             for j in range(i*i, N + 1, i):
+#                 is_prime[j] = False
+
+#     primes = [i for i in range(2, N + 1) if is_prime[i]]
+#     return primes
+# result = sieve_of_eratosthenes(N)
+# print(*result)
+
+
+
+
+# Create an array of integers and calculate the sum of its elements.
+# nums = list(map(int,input().split()))
+# print(sum(nums))
+
+# Find the largest number in an array of integers.
+# nums = list(map(int, input().split()))
+# largest = max(nums)
+# print(largest)
+
+# Reverse the contents of an array without using built-in functions.
+# n = int(input())
+# arr = list(map(int, input().split()))
+
+# start = 0
+# end = n - 1
+
+# while start < end:
+#     arr[start], arr[end] = arr[end], arr[start]
+#     start += 1
+#     end -= 1
+# print(*arr)
+
+# Implement a method to merge two sorted arrays into one sorted array.
+# def merge_arrays(arr1, arr2):
+#     result = []
+#     i, j = 0, 0
+
+#     while i < len(arr1) and j < len(arr2):
+#         if arr1[i] < arr2[j]:
+#             result.append(arr1[i])
+#             i += 1
+#         else:
+#             result.append(arr2[j])
+#             j += 1
+
+#     while i < len(arr1):
+#         result.append(arr1[i])
+#         i += 1
+
+#     while j < len(arr2):
+#         result.append(arr2[j])
+#         j += 1
+
+#     return result
+
+# arr1 = list(map(int, input("Enter arr1 : ").split()))
+# arr2 = list(map(int, input("Enter arr2 : ").split()))
+# output = merge_arrays(arr1, arr2)
+
+# print("Merged Sorted Array:", sorted(output))
